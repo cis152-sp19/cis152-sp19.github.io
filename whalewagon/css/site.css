@@ -1,0 +1,142 @@
+/* add your css on this page */
+body { 
+    font-size: 100%;
+    background-color: #110D2E;
+    color: #D4AF37;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+article>section {
+    margin: 2em;
+}
+
+#family {
+    width: 78%;
+    float: left;
+}
+p {
+    text-align: center;
+}
+
+aside {
+    margin-top: 5em;
+    float: right;
+    width: 15%;
+    height: 190px;
+    border-left: 2px solid #5146A4;
+    padding: .3em;
+    font: lighter 120%/130% "Brush Script MT", cursive;
+    color: #8781B1;
+}
+
+aside p {
+    float: right;
+}
+
+#work {
+    clear: both;
+}
+#mod {
+    clear:both;
+}
+#shop {
+    clear:both;
+}
+
+article a:link {
+    color: #8781B1;
+}
+
+.car {
+    float:right;
+    padding: 5px;
+
+}
+.left {
+    float:left;
+    padding: 5px;
+    
+}
+.right {
+    float:right;
+    padding: 5px;
+}
+
+article a:visited {
+    color: #564D94;
+}
+
+article a:hover, article a:focus {
+    color: #6556C0;
+    font-weight: bold;
+}
+
+img {
+    border: darkgoldenrod 3px groove;
+    padding: 2px;   
+}
+#wrap {
+    float:left;
+}
+#clearwrap {
+    clear:both;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column {
+  float: left;
+  width: 22%;
+  padding: 5px;
+}
+nav {
+    position: static;
+    right: 2em;
+    top: 3em;
+}
+
+.navItem {
+    color: darkgoldenrod;
+    background-color: #D4AF37;
+    padding: 1.3em;
+    font-size: 1.8em;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: .2em;
+}
+
+#working {
+    text-align: center;
+}
+.active {
+    color: #716D88;
+    text-shadow: -1px 1px 2px #0B0919;
+}
+
+
+h1 {
+    text-align: center;
+    padding-top: 1em;
+}
+h2 {
+    text-align: left;
+}
+h3 {
+    text-align:center;
+}
+
+
+footer{
+    margin: .4em;
+    color: darkgoldenrod;
+    line-height: 2.5em;
+    text-align: center;
+    clear:both;
+    background-color:white;
+}
