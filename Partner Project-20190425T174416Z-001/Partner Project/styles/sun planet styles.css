@@ -1,0 +1,209 @@
+/* the styles for the elements */
+* {
+	margin: 1;
+	padding: 1;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+    font-size: 100%;
+    color: #063048;
+    width: 99%;                    
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: cornsilk; 
+} 
+a{
+    color: #0649D0;
+    
+}
+a:focus, a:hover {
+	font-style: italic;
+    color: #5C5BD2;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+		
+}
+header img {
+	float: left;
+	padding: 0 3.75%;
+}
+
+header img {
+	float: left;
+	padding: 0 3.75%;            
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+    flex-basis: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: black;
+   
+
+
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: aquamarine;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    
+}
+#nav_menu ul li:hover > ul {
+	display: block; 
+   
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#nav_menu ul li ul {
+    width: 20%;
+     color: #176C9D;
+}
+
+/* the styles for the main content */
+main {
+	clear: both;
+}
+
+/* the styles for the section */
+section {
+	width: 90%;                  
+	float: none;
+	padding: 0 2.5% 20px 2.5%;
+    
+}
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+section h2 {
+	color: #176C9D;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+#pet-parrot{
+    max-width: 90%;
+}
+
+section p {
+	padding-bottom: .5em;
+
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: none;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+/* the styles for the article */
+article {
+    display: block;
+    float: right;
+	padding: 0.2em 0;
+    margin: 1em;
+	
+}
+article h2 {
+	padding-top: 0;
+    color: #176C9D;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	max-width: 80%;
+	min-width: 150px;
+    
+	margin: .5em 0 1em 1em;
+	
+}
+
+/* the styles for the footer */
+footer {
+	background-color: black;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+#mobile_menu {
+	display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	section h1 { font-size: 135%; }
+	section h2, aside h2 { font-size: 120%; }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;                     /* 100 - (2 x 2.5) for padding */
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;           /* 20 / 800 x 100 */
+		width: 95%;                    /* 100 - (2 x 2.5) for padding */
+	}
+    #pet-parrot {max-width 30%}
+	#bird-shirts { max-width: 100%; }
+	#speakers {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #176C9D !important;
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}
