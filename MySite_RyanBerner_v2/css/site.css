@@ -1,0 +1,120 @@
+/* add your css on this page */
+body { 
+    font-size: 100%;
+    background-color: lightsteelblue;
+    color: black;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#MainArticle {
+    background-color: lightsteelblue;
+}
+
+article>section {
+    margin: 2em;
+}
+
+#family {
+    width: 78%;
+    float: left;
+}
+aside {
+    margin-top: 5em;
+    float: right;
+    width: 15%;
+    height: 100px;
+    border-left: 2px solid dodgerblue;
+    padding: .3em;
+    font: lighter 120%/130% "Brush Script MT", cursive;
+    color: dodgerblue;
+}
+header {
+    background-color: darkblue;
+    height: 90px;
+}
+aside>p {
+    float: right;
+    color: dodgerblue;
+}
+
+#work {
+    clear: both;
+}
+
+ul li::first-letter {
+    font-size: 160%;
+}
+
+article a:link {
+    color: forestgreen;
+}
+
+article a:visited {
+    color: red;
+}
+
+article a:hover, article a:focus {
+    color: orange;
+    font-weight: bold;
+}
+
+img {
+    border: darkblue 3px groove;
+    padding: 2px;
+    height: 200px;
+}
+
+#icon {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+#menuPlanner,span {
+    float: right;
+    margin: 0 .6em 0 1.4em;
+}
+
+nav {
+    position: absolute;
+    right: 2em;
+    top: 3em;
+}
+
+.navItem {
+    color: forestgreen;
+    padding: 1.3em;
+    font-size: 1.8em;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: .2em;
+}
+
+.active {
+    color: lightblue;
+    text-shadow: -1px 1px 2px #0B0919;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 1em;
+    color: blue;
+}
+header img {
+    width: 18em;
+}
+h2 {
+    color: forestgreen;
+}
+/* footer styles */
+
+footer>small  {
+    margin: .4em;
+    color: lightblue;
+    line-height: 2.5em;
+    background-color: darkblue
+}
+#foot{
+    background-color: darkblue
+}
+    
