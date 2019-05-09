@@ -1,0 +1,181 @@
+body {
+    background-color: transparent;
+}
+/* welcome img*/
+#donutshome{
+    padding-top:8%;
+   width:100%;
+}
+
+/* nav bar */
+body {
+   margin:0 auto;
+   padding: 0;
+   font-family: 'Roboto', serif;
+}
+
+#NavBarImg{
+    width:100%;
+}
+
+.nav {
+  float: right;
+  list-style: none;   
+text-align: left;
+  margin: 0;
+}
+
+.nav > li {                                                            
+    display:Inline-block;
+    padding: 10% 9px 10% 9px; 
+}
+
+.examplemodal {
+    position: absolute;
+    left:55%;
+    margin-left: 0px;
+    float: right;
+    background-color: transparent;
+    width: 40%;
+    z-index: 11; 
+}
+
+#NavLogo {
+    line-height: 200px;
+    position: absolute;
+    top: -2%; 
+    left: 103.5%;
+    width:20%;
+    margin-top: 0;
+    margin-left: -100%;
+    background-color: transparent;
+    text-align:right;
+    z-index: 11; 
+}
+
+ .nav > li a {                                               
+     text-decoration: none;
+     color: black;
+     font-size: 200%;
+     padding: 10px 0px 5px 0px;
+    font-weight:bold;
+ }
+
+.exampleoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+ .nav > li > a:hover {
+    border-radius:100%;
+     background-color: #A2621B;
+   
+ }
+/* END OF NAV BAR */
+
+/*FUNFACT1*/
+#funfact1{
+    float: left;
+  width: 25vw;
+  height: 25vw;
+  margin: 1em;
+     background-color: #A2621B;
+    color:white;
+   
+    text-align:center;
+   
+}
+#funfact1 p{
+    padding-top: 20%;
+    font-size: 280%;
+    
+}
+
+/*gif*/
+#gif{
+    float: left;
+  width: 30%;
+  height: 30%;
+  margin: 1em;
+   
+}
+#gif2{
+    width:100%
+}
+
+/*FUNFACT2*/
+#funfact2{
+    float: left;
+   width: 25vw;
+    height:25vw;
+  margin: 1em;
+    background-color: #A2621B;
+    color:white;
+    text-align:center;
+}
+#funfact2 p{
+    padding-top: 20%;
+    font-size: 280%;
+}
+
+.homepageclass{
+    width:100%;
+    margin-left: 7%;
+ 
+  
+}
+
+/* newsletter */
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+  
+    width:40%;
+    padding-left:30%;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color:	#DA9B3C;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+#video{
+   padding-left:35%;
+    padding-bottom: 20%;
+    border:0px;
+   
+}

@@ -1,0 +1,113 @@
+body {
+    background-color: transparent;
+}
+/* welcome img*/
+#contact{
+    padding-top:8%;
+   width:100%;
+}
+
+/* nav bar */
+body {
+   margin:0;
+   padding: 0;
+   font-family: 'Roboto', serif;
+}
+
+#NavBarImg{
+    width:100%;
+}
+
+.nav {
+  float: right;
+  list-style: none;   
+text-align: left;
+  margin: 0;
+}
+
+.nav > li {                                                            
+    display:Inline-block;
+    padding: 10% 9px 10% 9px; 
+}
+
+.examplemodal {
+    position: absolute;
+    left:55%;
+    margin-left: 0px;
+    float: right;
+    background-color: transparent;
+    width: 40%;
+    z-index: 11; 
+}
+
+#NavLogo {
+    line-height: 200px;
+    position: absolute;
+    top: -2%; 
+    left: 103.5%;
+    width:20%;
+    margin-top: 0;
+    margin-left: -100%;
+    background-color: transparent;
+    text-align:right;
+    z-index: 11; 
+}
+
+ .nav > li a {                                               
+     text-decoration: none;
+     color: black;
+     font-size: 200%;
+     padding: 10px 0px 5px 0px;
+    font-weight:bold;
+ }
+
+.exampleoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+ .nav > li > a:hover {
+    border-radius:100%;
+     background-color: #A2621B;
+   
+ }
+/* END OF NAV BAR */
+
+#contactthing {
+    
+    background-color:#DB9B44;
+        text-align: center;
+    width:40%;
+    height:100%;
+   border-radius: 25px;
+    font-size:150%;
+    padding-left:15%;
+    padding-right:15%;
+    margin-left:18%;
+      
+  
+}
+
+
+#twitter{
+  
+     display:inline;
+        
+}
+#instagram{
+     display:inline;
+   
+}
+
+#facebook{
+  display:inline;
+   
+ 
+}
+footer{
+    text-align: center;
+}
