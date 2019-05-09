@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Menu for Donut Delights">
+    <meta name="keywords" content="donut,coffee,Urbana,delights">
+    <title>Donut Delights</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+    <img src="images/NEWLOGO.png" alt="Donut Delights Logo">
+    <br>
+    <nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="menu.html" class="current">Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+        	<li><a href="contact.html">Contact</a></li>
+    	</ul>
+	</nav>
+    <h3>The finest in breakfast treats and coffees since 1971!</h3>
+    </header>
+    
+    <main>
+        <h1>Menu;</h1>
+        <h3>Bakers Dozen Donuts regular donuts: chocolate frosted, vanilla frosted, boston cream, jelly filled, cream filled, glazed, chocolate glazed, marble twist, sugar raised, plain donut, plain cruller, honey wheat, jelly puff, cream puff, coffee roll. - $8.65<br><br>
+        Regular Donut regular donuts: chocolate frosted, vanilla frosted, boston cream, jelly filled, cream filled, glazed, chocolate glazed, marble twist, sugar raised, plain donut, plain cruller, honey wheat, jelly puff, cream puff, coffee roll. - $1.05><br><br>
+        Fancy Donuts: bow tie, éclair, apple turnover, fancy coffee roll. - $2.00<br><br>
+        French Cruller - $2.00
+        </h3>
+        <h2>Top Sellers</h2>
+        <h4>
+            <ul>
+            <li>Pistachio Pinwheels</li>
+            <li>Boston Cream Delights</li>
+            <li>Chocolate Confetti</li>
+            <li>Marshmallow Mayhems</li>
+            <li>French Twists</li>
+            <li>Bull Horns</li>
+            </ul>
+        </h4>
+        <img src="images/vetsAdSmall.gif" alt="Vets Eat Free gif" class="gif"> 
+        
+        
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+  <img src="images/donutsInCase.jpg" style="width:21%">
+    </div>
+
+    <div class="mySlides fade">
+  <img src="images/pinwheels.jpg" style="width:21%">
+    </div>
+
+    <div class="mySlides fade">
+  <img src="images/bullsHorn.jpg" style="width:21%">
+    </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    
+</main>
+    
+    <footer>Copyright Donut Delights 2019</footer>
+
+</body>

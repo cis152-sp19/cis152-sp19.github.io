@@ -1,0 +1,135 @@
+html {
+    background-color: sienna
+}
+header img {
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+header h3 {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+#nav_menu ul {
+	list-style-type: none;
+    margin-left: 10%;
+	padding: .2px;
+	position: relative;
+    display: inline-block;
+}
+#nav_menu ul li {
+	float: left;
+    border: 1px solid;
+    border-color: white;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: .3em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: deepskyblue;
+    font-style: italic;
+}
+main h1{
+    float: left;
+    color: white;
+    text-decoration: underline;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px
+}
+main h2{
+    float: left;
+    color: white;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px
+}
+main img {
+    margin-right: 50px;
+    margin-top: 20px;
+    float: right;
+    width: 35%
+}
+.media {
+    padding-left: 20px;
+    padding-top: 290px;
+    position: absolute;
+}
+.fa {
+  padding: 12px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: darkblue;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+    background: red;
+  color: white;
+}
+.fa-google-plus {
+    background: orange;
+  color: white;
+}
+fieldset {
+    margin-top: 0em;
+    margin-bottom: .6em;
+    padding: 1em 3em 1em 3em;
+}
+label {
+    float: left;
+    width: 4em;
+    text-align: right;
+}
+input, select {
+    width: 15em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+input:required, input[required] {
+	border: 2px solid red;
+}
+input:valid {
+	border: 2px solid skyblue;
+}
+input:invalid {
+	box-shadow: none;
+    border: 2px solid red;
+    color: #800000;
+}
+.button {
+    text-align: center;
+}
+br {
+    clear: both;
+}
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: grey;
+   text-align: center;
+}

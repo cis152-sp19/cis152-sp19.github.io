@@ -1,0 +1,76 @@
+html {
+    background-color: sienna
+}
+header img {
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+header h3 {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+#nav_menu ul {
+	list-style-type: none;
+    margin-left: 10%;
+	padding: .2px;
+	position: relative;
+    display: inline-block;
+}
+#nav_menu ul li {
+	float: left;
+    border: 1px solid;
+    border-color: white;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: .3em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: deepskyblue;
+    font-style: italic;
+}
+main h1{
+    text-align: right;
+    float: left;
+    color: white;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px
+}
+main h3{
+    color: yellow;
+    font-style: italic;
+    text-align: center;
+    width:40%;
+    margin-left: 60px;
+}
+main img {
+    float: right;
+    width: 40%;
+    margin-right: 10px;
+    margin-bottom: 30px;   
+}
+.map {
+    float: right;
+    width: 100%;
+}
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: grey;
+   text-align: center;
+}
