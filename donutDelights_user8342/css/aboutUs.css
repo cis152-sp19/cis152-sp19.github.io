@@ -1,0 +1,55 @@
+main {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "article"
+        "contact"
+        "social";
+}
+
+article {
+    text-align: center;
+    margin: 0 3em;
+}
+
+article p {
+    font-size: 180%;
+    margin: 3em 0;
+    text-indent: 2em;
+    text-align: left;
+    line-height: 1.8;
+}
+
+article img {
+    max-width: 80%;
+    margin: 2em;
+    border: 5px #AD3C1E solid;
+    border-radius: 8px;
+}
+
+#second {
+    float: right;
+}
+
+#third {
+    float: left;
+    max-width: 50%;
+}
+
+#fourth {
+    max-width: 40%;
+    float: right;
+}
+
+@media (max-width:650px) {
+    
+    #fourth {
+        display: none;
+    }
+    
+    #third {
+        float: none;
+        max-width: 80%;
+    }
+    
+}

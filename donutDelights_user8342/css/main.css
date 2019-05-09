@@ -1,0 +1,339 @@
+/* general styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*colors
+
+#422A26
+#4A3631
+#F5B145
+#D27A3A
+#AD3C1E
+
+*/
+
+@font-face {
+    font-family: blackChancery;
+    src: "../fonts/BLKCHCRY.TTF";
+}
+
+html, body {
+    width: 100%;
+}
+
+h1 {
+    font-family: blackChancery;
+    font-size: 500%;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 5px #000000;
+    text-align: center;
+    margin: 1em;
+}
+
+h2 {
+    font-size: 350%;
+    font-family: blackChancery;
+    margin: 1em;
+}
+
+body {
+    font-size: 100%;
+    font-family: arial, sans-serif;
+    background-color: #D27A3A;
+    background-image: url("../images/background.svg");
+    background-size: 6%;
+    background-repeat: repeat;
+}
+
+
+/* header styles */
+
+#header {
+    background-color: #422A26;
+    overflow: hidden;
+}
+
+#header > img {
+    width: 102%;
+    position: relative;
+    right: 1%;
+}
+
+#logoNav {
+    display: grid;
+    grid-template: auto / 35% auto;
+    padding-bottom: 1%;
+}
+
+#logoNav img {
+    align-self: center;
+    justify-self: left;
+    margin-left: 10%;
+    max-width: 22%;
+    min-width: 100px;
+}
+
+#nav {
+    align-self: center;
+}
+
+#nav ul {
+    list-style-type: none;
+    text-shadow: 1px 1px 3px #000000;
+    font-size: 300%;
+    font-family: blackChancery;
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+}
+
+#nav ul li {
+    margin: auto;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    color: #F5B145;
+    cursor: pointer;
+}
+
+.current > a {
+    color: #AD3C1E;
+    text-decoration: underline;
+}
+
+#mobileMenu {
+    display: none;
+    font-family: blackChancery;
+    font-size: 200%;
+    text-shadow: 1px 1px 3px #000000;
+    justify-self: center;
+    align-self: center;
+}
+
+#mobileMenu ul {
+    list-style-type: none;
+    position: absolute;
+}
+
+#mobileMenu li {
+    display: none;
+    position: absolute -100%;
+}
+
+#mobileMenu ul:hover > li, #mobileMenu ul:focus + li {
+    display: block;
+    padding: 0.5em;
+    background-color: #422A26;
+    text-align: center;
+}
+
+
+/* main styles */
+
+main {
+    background-color: #F5B145;
+    width: 70%;
+    min-width: 840px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 600px auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "slider slider"
+        "welcome welcome"
+        "location video"
+        "contact contact"
+        "social social";
+}
+
+#welImage {
+    display: none;
+    justify-self: center;
+    margin: 2em 0;
+    width: 85%;
+}
+
+#sliderSection {
+    padding: 50px 0;
+    grid-area: slider;
+}
+
+#welcome {
+    grid-area: welcome;
+    text-align: center;
+}
+
+#welcome p {
+    margin: 1em 20%;
+    font-size: 150%;
+    text-indent: 2em;
+    line-height: 1.8;
+}
+
+#location {
+    text-align: center;
+}
+
+#location img {
+    max-width: 80%;
+    border: 5px #AD3C1E solid;
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+
+address {
+    font-size: 150%;
+    font-weight: 700;
+    margin: 1em;
+}
+
+#ads {
+    display: grid;
+    grid-template: 1fr 1fr / auto;
+    grid-area: video;
+    align-items: center;
+    justify-items: center;
+}
+
+video {
+    width: 400px;
+    border: 5px #000000 solid;
+    border-radius: 8px;
+}
+
+#ads img {
+    border: 5px #000000 solid;
+    border-radius: 8px;
+}
+
+#contact {
+    grid-area: contact;
+    text-align: center;
+    
+    margin: 2.5% 0;
+}
+
+#contact > p {
+    font-size: 150%;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+phone, email {
+    font-weight: 700;
+}
+
+#socialMedia {
+    text-align: center;
+    grid-area: social;
+    font-size: 150%;
+    font-weight: 500;
+    margin: 1.5em 0;
+}
+
+#socialMedia ul {
+    list-style-type: none;
+    display: grid;
+    grid-template: auto / repeat(4, 100px);
+    align-content: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#socialMedia ul li {
+    margin: auto;
+}
+
+footer {
+    background-color: #422A26;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p {
+    padding: 1.5em 0;
+}
+
+@media (max-width:1280px) { 
+    
+    #nav ul {
+        font-size: 200%;
+    }
+    
+}
+
+@media (max-width:920px) {
+    
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width:850px) {
+    
+    #sliderSection {
+        display: none;
+    }
+    
+    main {
+        grid-template: repeat(6, auto) / auto;
+        grid-template-areas:
+        "welImage"
+        "welcome"
+        "video"
+        "location"
+        "contact"
+        "social";
+        min-width: 0%;
+    }
+    
+    #welImage {
+        display: block;
+        grid-area: welImage;
+    }
+    
+    #mobileMenu {
+        display: block;
+    }
+    
+    #nav {
+        display: none;
+    }
+    
+}
+
+@media (max-width:650px) {
+    
+    #socialMedia img {
+        max-width: 50px;
+    }
+    
+}
+
+@media (max-width:450px) {
+    
+    #socialMedia img {
+        max-width: 35px;
+    }
+    
+    video {
+        width: 85%;
+    }
+    
+    #welcome h1 {
+        font-size: 350%;
+    }
+    
+    #welcome p {
+        font-size: 110%;
+    }
+    
+}

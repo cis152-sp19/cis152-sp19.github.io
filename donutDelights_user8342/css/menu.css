@@ -1,0 +1,105 @@
+main {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "menu"
+        "deals"
+        "contact"
+        "social";
+}
+
+h3 {
+    font-size: 200%;
+    font-family: blackChancery;
+    margin: 1em;
+}
+
+#menu {
+    grid-area: menu;
+    display: grid;
+    grid-template: auto auto auto auto / 1fr 1fr;
+    grid-template-areas: 
+        "title title"
+        "lists imgs"
+        "prices prices"
+        "image image";
+    text-align: center;
+}
+
+#menu h2 {
+    grid-area: title;
+}
+
+#lists {
+    grid-area: lists;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "regular fancy";
+}
+
+#regular {
+    grid-area: regular;
+}
+
+#fancy {
+    grid-area: fancy;
+}
+
+#imgs {
+    grid-area: imgs;
+}
+
+#menu img {
+    max-width: 75%;
+    margin: 1em 0;
+    border: 5px #AD3C1E solid;
+    border-radius: 8px;
+}
+
+#image {
+    max-width 75%;
+    margin: 1em 0;
+    border: 5px #AD3C1E solid;
+    border-radius: 8px;
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+}
+
+#prices {
+    grid-area: prices;
+}
+
+#prices ul {
+    line-height: 3;
+}
+
+main ul {
+    list-style-type: none;
+    line-height: 2.2;
+    font-size: 140%;
+    font-weight: 400;
+}
+
+#deals {
+    grid-area: deals;
+    text-align: center;
+}
+
+form {
+    font-size: 140%;
+}
+
+@media (max-width:650px) {
+    
+    #menu {
+        grid-template: auto auto auto auto auto/ 1fr;
+        grid-template-areas: 
+            "imgs"
+            "title"
+            "lists"
+            "image"
+            "prices";
+    }
+    
+}
