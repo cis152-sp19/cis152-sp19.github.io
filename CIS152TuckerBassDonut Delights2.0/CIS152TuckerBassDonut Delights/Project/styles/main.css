@@ -1,0 +1,144 @@
+/* the styles for the elements */
+@media only screen and (max-width: 1366px)(min-width:768){
+    body{font-size: 90%; }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+font-size: 100%;
+font-family: "Times New Roman",sans-serif;
+background-image: linear-gradient(100deg, #E6B138 20%, brown 50%, #E6B138 10%,
+    brown 100%);
+      display: grid;
+    grid-template: repeat(4, auto)/ auto;
+    grid-template-areas: 
+        "head"
+        "images"
+        "description"
+        "foot";
+}
+
+/*elements for the head*/
+
+.head{
+    grid-area: head;
+    display: grid;
+    grid-template: auto/ 50% 50%;}
+
+#ImageTitle{
+    padding-top: .5em;
+
+
+float: left;
+}
+
+#Title{
+     grid-column: 2/3;
+    float: right;
+    padding: .5em;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/*elements for Nav */
+
+#Logos{
+    float: left;}
+
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	position: relative;
+    
+}
+#nav_menu ul li {
+	float: right;
+    border-bottom: 1px solid black;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    font-size: 150%;
+}
+#nav_menu a.current {
+	color: yellow;
+    border: 1px solid black;
+}
+/*elements for the main*/
+.image{
+    grid-area: images;
+    display: grid;
+    grid-template: auto/ 50% 50%;
+}
+
+#StoreFront img{ 
+    grid-column: 2/3;
+    text-align: center;
+    padding-top: .5em;
+ text-align: center;
+margin-left: 10px;}
+
+#Location_map img{
+    grid-column: 2/3;
+    float: right;
+    padding: .5em;
+    text-align: center;
+}
+
+
+/*elemnts for the main*/
+
+main{
+    border-top: 10px solid black;
+    border-bottom: 10px solid black
+}
+
+/*elements for h4*/
+
+h4{
+    font-size: 200%;
+    border-bottom: 10px solid black;
+}
+iframe{
+    float: right;
+}
+
+/*elments for the footer*/
+
+#footer_1{
+    font-size: 200%;
+}
+footer{
+   clear: both;
+    border-top: 10px solid black;
+}
+
+
+
+/*elements for settnig up*/
+@media only screen and (max-width: 959px) {
+    #nav_menu {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px){
+    #nav_menu {
+		display: none;
+	}
+}
