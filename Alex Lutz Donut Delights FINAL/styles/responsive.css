@@ -1,0 +1,311 @@
+@charset "utf-8";
+/* Simplify width and height calculations */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+#logo {
+    display: block;
+   width: 200px;
+    margin-left: 30px;
+    padding-bottom: 10px;  
+    float: left;
+}
+#h1header{
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 10px;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 1.5em !important;
+    
+}
+header{
+    background-color: floralwhite;
+}
+body {
+	margin: 0;
+	color: saddlebrown;
+	font-family: 'Quicksand', sans-serif !important; 
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.8em !important;
+	background-color: floralwhite;
+}
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1000px;
+	background-color: white;
+}
+h1, h2 {
+	color: saddlebrown;
+	font-style: normal;
+	font-weight: 400;
+}
+h1 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1em;
+	text-align: right;
+	text-transform: uppercase;
+}
+h2 {
+	margin-top: 0.5em;
+	font-size: 2.25em;
+}
+a {
+	font-weight: bold;
+	text-decoration: none;
+}
+a:link {
+	color: darkorange;
+}
+a:visited {
+	color: chocolate;
+}
+a:hover, a:active, a:focus {
+	color: #EFBD07;
+	text-decoration: underline;
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+    flex-basis: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #261400;
+    color: #F8E1A5
+    font-weight: bold !important;
+}
+#nav_menu a.current {
+	color: aquamarine;
+}
+
+main, aside {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+#about{
+  width: 90%;
+}
+figure {
+	width: 400px;
+	max-width: 92%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+figure img {
+	max-width: 100%;
+}
+figcaption {
+	display: block;
+	margin-top: 0.5em !important;
+	font-size: 0.90em !important;
+	text-transform: uppercase;
+}
+h3{
+    text-align: center;
+    color;
+}
+
+footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #1E1E1E;
+	color: white;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+@media (min-width: 700px) {
+#menulink {
+	display: none;
+   
+}
+#navlinks {
+	max-width: 1000px;
+	position: static;
+	background-color: transparent;
+}
+
+}
+#navlinks a {
+	width: 20%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	float: left;
+	color: #1E1E1E;
+}
+header {
+    overflow: hidden;
+}
+
+main {
+	width: 60%;
+}
+aside {
+	width: 28%;
+	margin-left: 0px;
+}
+main, aside {
+	margin-top: 30px;
+	margin-bottom: 30px;
+    float: left;
+	font-size: 0.875em;
+}
+#youtube{
+    font-size: 1.5em;
+    text-align: center;
+}
+#inside{
+    max-width: 100%;
+}
+
+#holes{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+}
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Quicksand, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #654003;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  background: #654003;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#4E3202; }
+#location{
+    max-width: 100%;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-size: 4em;
+    font-family: 'Sue Ellen Francisco', cursive;
+    text-shadow: 2px 2px #000000;
+
+}
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 30PX;
+  left: 30px;
+    text-shadow: 2px 2px #000000;
+}
+#contact-header{
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 2.3em;
+}
+.mapouter{position:relative;text-align:right;height:500px;width:600px;
+}
+.gmap_canvas{
+    overflow:hidden;background:none!important;height:500px;width:600px;
+}
+#address{
+    font-size: 1.2em;
+}
+#dutch{
+    text-align: center;
+}
+footer {
+	clear: both;
+    background: black;
+
+}
+.footer {
+  background: black;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+
+
+@media (min-width: 900px) {
+    .floatright {
+	float: right;
+	margin-right: 0px;
+	margin-left: 10px;
+}
+.floatleft {
+	float: left;
+	margin-right: 10px;
+}
+
