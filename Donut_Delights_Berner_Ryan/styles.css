@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+    
+}
+#line{
+    border-top: .5em solid #FACF18;
+    margin: 0;
+    
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 650px;
+	margin: 0 auto;
+    background-color: white;
+}
+label {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 12em;
+    color: white
+}
+label, input, select {
+	font-size: 90%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+section {
+	padding: 15px 25px;
+    
+}
+#logo { 
+	margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+h2 { 
+	font-size: 100%;
+	margin-bottom: .1em;
+    color: #FACF18;
+    display: inline;
+}
+h3 { 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+    display: inline;
+    color: white;
+    float: right;
+  
+}
+
+ul {
+	padding-left: 45px;
+    background-color: #138654;
+    color: white;
+}
+li {
+	padding-bottom: .45em;
+    background-color: #138654;
+    color: white;
+}
+p {
+	padding-bottom: 1.5em;
+     background-color: #138654;
+    color: white;
+    
+}
+#tabs {
+    background-color: #138654;
+}
+footer {
+    padding-bottom: .45em;
+    background-color: #138654;
+    color: white;
+    margin-left: 1.6em;
+    margin-right: 1.6em;
+    margin-top: -1em;
+    margin-bottom: 0;
+    text-align: center;
+}
