@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Donut Delights</title>
+	<link rel="shortcut icon" href="images/faviconn.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link href="images/NEWLOGO.png">
+    <link href="images/Coffee-1.jpg">
+    <link href="images/donut-+-hot-coffee-2-copy1.jpg">
+    <link href="images/donutsInCase2.jpg">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+        
+        /* script for slide show */ 
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+    
+    <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #27160F;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #B45427;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+   
+</head>
+
+<body>
+	<header>
+        <div id=Logo>
+		<a href="index.html"><img src="images/NEWLOGO.png" alt="Donut Delights logo" height="100"></a>
+        </div>
+	</header>
+    <nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="menu.html">Menu</a></li>
+        	<li><a href="contact.html" class="current">Contact</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+    	</ul>
+	</nav>
+	<main>
+		<section>
+<h2>Contact</h2>
+ 
+
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.3013468358945!2d-88.18212314866547!3d40.11328737930043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd7e9a1ab6eb3%3A0xa3e3106650649a75!2s2112+E+Main+St%2C+Urbana%2C+IL+61802!5e0!3m2!1sen!2sus!4v1557254675738!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+			<h2>Donut Delights</h2>
+               <p id="location">2112 Main Street Urbana, Illinois 61801
+               <br>(217)-555-1234 
+                <br>email: contact@donutdelights.com</p>
+
+	        		<label for="email">E-Mail:</label>
+	        		<input type="email" name="email" id="email" autofocus required><br>
+            
+			
+			
+			
+		</section>
+	<aside>
+			
+			
+			<h3>Open Hours:<br></h3>
+			<ul>
+<li>Tuesday	    5:30AM–4PM</li>
+<li>Wednesday	5:30AM–4PM</li>
+<li>Thursday	5:30AM–4PM</li>
+<li>Friday	    5:30AM–4PM</li>
+<li>Saturday	5:30AM–3:30PM</li>
+<li>Sunday	    5:30AM–3:30PM</li>
+<li>Monday	    5:30AM–4PM</li>
+			</ul>
+		</aside>
+	</main>
+	<footer>
+        <div id="face">
+        <a href="https://www.facebook.com/events/"><img  src="images/icons8-facebook-48.png" alt=facebook height="48"></a>
+        <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img  src="images/icons8-twitter-squared-48.png" alt=twitter height="48"></a>
+        <a href="https://twitter.com/instagram?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img  src="images/icons8-instagram-48.png" alt= instagram height="48"></a>
+            
+     </div>
+		<p>&copy; 2019, Donut Delights, Champaign, IL 61801</p>
+	</footer>
+</body>
+</html>
