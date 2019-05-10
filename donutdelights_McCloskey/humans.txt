@@ -1,0 +1,27 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Lead Developer: [Sean McCloskey]
+  Contact: [smccloskey1@stu.parkland.edu]
+  Social Media: [Facebook: https://www.facebook.com/sean.mcloskey.3]
+
+# THANKS
+
+  Client: [Melvin Furballski]
+  Website: [www.donutdelightscu.com]
+  Contact: [contact@donutdelights.com]
+
+
+# SITE DETAILS
+
+  Company Name: [Donut Delights]
+  URL: [www.donutdelightscu.com]
+  Launch Date: [5/9/19]
+  Date of Latest Update: [5/9/19]
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
