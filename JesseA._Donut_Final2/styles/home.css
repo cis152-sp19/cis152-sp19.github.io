@@ -1,0 +1,257 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 98%;                     /* changed from 800 pixels */
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid #27160F;
+    background-color: #FFDFA6;
+    display: grid;
+    grid-template: repeat(4, auto) / auto 1fr;
+    grid-template-areas:
+        "head head"
+        "navi navi"
+        "main main"
+        "foot foot";
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+
+#Logo {
+     width: 150px;
+  margin : auto;
+}
+/* the styles for the header */
+header {
+	padding: 1em 0 .5em 0;
+	border-bottom: 3px solid #27160F;
+		background-color: white; 
+    grid-area: head;
+}
+header h2 {
+	font-size: 300%;
+	color: #B45427;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+    color: #B45427;
+}
+header img {
+	float: left;
+	padding: 0 3.75%;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+/* the styles for the navigation menu */
+#nav_menu {
+    grid-area: navi;
+}
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+    align-content: center;
+    
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #27160F;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: #FFC83C;
+}
+/* the styles for the main content */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template: auto / 30% auto;
+    grid-gap: 2.5%;
+}
+
+/* the styles for the section */
+section {
+	padding: 0 3.7% 20px 0;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+    color: #B45427;
+}
+section h2 {
+	color: #B45427;
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+#cash {
+font-weight: bold;
+float: right
+}
+
+#text { 
+    padding: 1em;
+}
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #27160F;
+	border-bottom: 2px solid #27160F;
+}
+article h2 {
+	padding-top: 0;
+    color: #B45427;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+    color: #B45427;
+}
+article img {
+	float: right;
+	max-width: 40%;
+	min-width: 150px;
+	margin: .5em 0 1em 1em;
+	border: 1px solid #27160F;
+}
+
+/* the styles for the aside */
+aside {
+	padding: 0 0 20px 8.3%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding-top: 1em;
+}
+aside h2 {
+	color: #FFDFA6;
+	font-size: 120%;
+	padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+	font-size: 120%;
+	padding-bottom: .25em;
+    color: #B45427;
+}
+aside ul li{
+    padding-bottom: 10px;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #27160F;
+    grid-area: foot;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+
+#face {
+  float: right; 
+   padding-left: 1em;
+    padding-top: 4px;
+}
+
+#mobile_menu {
+	display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	section h1 { font-size: 135%; }
+	section h2, aside h2 { font-size: 120%; }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+
+    body {
+        grid-template: repeat(4, auto) / 1fr;
+        grid-template-areas:
+            "head"
+            "navi"
+            "main"
+            "foot";
+    }
+	header img { float: none; }
+	header {
+        display: grid;
+        grid-template: repeat(3, auto) / 1fr;
+        grid-gap: .5em;
+        text-align: center;
+        padding: 1.5em 0 1.5em 0;
+    }
+    header img {
+        justify-self: center;
+    }
+    main {
+        grid-template: auto auto / 1fr;
+    }
+	section {
+        grid-column: 1 / 2;
+        margin: 0 2.5%;
+        padding-right: 0;
+	}
+	aside {
+		padding-right: 2.5%;
+        padding-left: 2.5%;
+        grid-row: 2 / 3;
+	}
+	article img { max-width: 30%; }
+	#speakers {
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+        grid-area: navi;
+	}
+	.slicknav_menu {
+		background-color: #27160F !important;
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}
