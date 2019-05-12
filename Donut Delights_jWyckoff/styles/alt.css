@@ -19,9 +19,6 @@ html {
 
 body{
     
-    max-width: 70em;
-    
-    
     font-family: Franklin Gothic Medium, sans-serif;
     font-size: 100%;
     color: whitesmoke;
@@ -30,12 +27,6 @@ body{
     border: 3px solid #CEA6CE;
     background-color: #CEA6CE;
     
-}
-
-main{
-    float: right;
-    width: 100%;
-    background-color: #CEA6CE;
 }
 
 table{
@@ -61,7 +52,7 @@ a:focus, a:hover {
 
 article{
     
-    float: right;
+    float: left;
 }
 
 
@@ -75,42 +66,17 @@ aside{
     
     float: left;
     
-    width: 18%;
+    width: 20%;
     
 }
 
-#login{
-    width: 6em;
-    background-color: #863C85;
-    color: whitesmoke;
-}
-
-#sign{
-    width: 6em;
-    background-color: #863C85;
-    color: whitesmoke;
-}
-
 figcaption{
-    float: right;
-    width: 100%%;
-}
-
-#sprinkles{
-    float left;
-}
-
-#meh{
-    float: right;
-    max-width: 12em;
-}
-
-#tab{
     float: left;
+    width: 20%;
 }
 
 figure{
-    float: right;
+    float: left;
 }
 
 /*seciton styles*/
@@ -118,12 +84,12 @@ figure{
 section{
     float: right;
     text-align: left;
-    width: 60%;
+    width: 70%;
     background-color: #CEA6CE;
-    padding-bottom: 20em;
-    padding-right: 3em;
-    
-    
+    padding: 5%;
+    padding-bottom: 20%;
+    padding-top: 0;
+   
 }
 
 section img{
@@ -180,12 +146,6 @@ section img{
     display: block;
 }
 
-
-#map{
-    float: left;
-}
-
-
 /* header styles */
 
 header{
@@ -219,33 +179,16 @@ header figure h3{
     float: left;
     padding: 1em;
 }
-
-header figure{
-    max-width: 14em;
-    min-width: 13em;
-}
-
 /* footer styles*/
 
 footer{
     background-color: #D000CE;
-    padding: .25em;
-    
-    /*
-    max-width: 70em;
-    min-width: inherit;
-    */
-    
+    width: 100%;
     bottom: 0;
-    
     position: fixed;
-    /*
     border: 3px solid #D000CE;
-    */
-    float: center;
+    float: none;
     
-    width:100%;
-   
     
 }
 
@@ -253,54 +196,3 @@ footer img{
     float: right;
     
 }
-
-#ten{
-    max-width: 70em;
-}
-
-
-
-
-/* registration form*/
-
-fieldset{
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding-top: 1em;
-    border: none;
-    width: 30em;
-    
-    
-    
-}
-
-legend{
-    text-align: center;
-    color: white;
-}
-
-
-label {
-    float: left;
-    text-align: right;
-    width: 12em;
-    padding-right: 1em;
-    
-}
-
-input:required, input[required] {
-    
-    border: 3px solid red;
-    
-}
-
-input:valid {
-    border: 1px solid #863C85;
-}
-
-input{
-    align-items: center;
-    
-}
-
-
